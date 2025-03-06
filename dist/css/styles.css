@@ -11048,10 +11048,14 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(75, 0, 130, 1) ,rgba(0, 0, 0, 1)) !important;
   color: #fff;
 }
 
 .copyright {
-  background-color: #1a252f;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(75, 0, 130, 1) ,rgba(0, 0, 0, 1)) !important;
 }
