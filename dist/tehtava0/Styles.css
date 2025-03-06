@@ -1,0 +1,146 @@
+/* Yleiset tyylit */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #404042; /* Taustaväri */
+  display: flex;
+  flex-direction: column;
+  color: #f4f4f9; /* Tekstin väri */
+  min-height: 100vh; /* Varmistaa, että koko sivu on täynnä */
+}
+
+/* Header-tyylit */
+header {
+  /*background-color: #2c3e50;  Headerin taustaväri */
+  background: linear-gradient(to right, #131010, #3dbb02);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navigoinnin tyylit */
+nav {
+  text-align: center;
+  background-color: #34495e; /* Navigoinnin taustaväri */
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+/* Hover-efekti ja alleviivaus*/
+nav a:hover {
+  background-color: #2c3e50;
+  text-decoration: underline;
+}
+
+.main {
+  background-color: #2c3e50;
+  width: 1200px;
+  height: 500px;
+  text-align: center;
+  margin: 20px auto; /* automaattinen marginaali */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hienovarainen varjo */
+  border-radius: 8px; /* Kulmien pyöristys */
+  flex-grow: 1; /* Sallii pääsisällön laajentua ja täyttää tilaa */
+}
+
+footer {
+  background: linear-gradient(to right, #131010, #3dbb02);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* YHTEYDENOTTOLOMAKE TYYLIT -----------------------*/
+#otayhteyttaForm {
+  background-color: #3c5064;
+  padding: 20px;
+  border-radius: 10px;
+  height: auto;
+  font-size: 16px;
+  width: 100%; /* Estetään kenttien menevän yli */
+  max-width: 500px; /* Asetetaan lomakkeen maksimileveys */
+  margin: 0 auto; /* Keskittää lomakkeen */
+}
+
+#otayhteyttaForm label {
+  display: block; /* Asettaa labelin elementin blokiksi, jotta se menee omalle riville */
+  margin-bottom: 8px; /* Lisää tilaa labelin ja kentän väliin */
+}
+
+#otayhteyttaForm input,
+#otayhteyttaForm textarea {
+  width: 100%; /* Kenttä vie koko leveysosan */
+  padding: 10px;
+  margin-bottom: 15px; /* Lisää tilaa kenttien väliin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Varmistaa, että padding ei vaikuta leveyteen */
+}
+
+#otayhteyttaForm textarea {
+  height: 120px; /* Asetetaan korkeutta tekstialueelle */
+}
+
+#otayhteyttaForm button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #2f312f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Button vie koko leveysosan */
+  margin-top: 10px; /* Lisää tilaa napin yläpuolelle */
+}
+
+/*Viitataan id:n perusteella (#) */
+#otayhteyttaForm button:hover {
+  background-color: #767976;
+}
+
+/* TIETOA SIVU -----------------------*/
+.kaikkikurssit {
+  text-align: left; /* Kohdistaa sisällön vasemmalle */
+  margin-left: 0; /* Poistaa ylimääräiset marginaalit vasemmalta */
+  text-decoration: underline;
+  padding: 0; /* Poistaa ylimääräiset sisennykset */
+}
+
+.kaikkikurssit li {
+  margin-bottom: 10px; /* Lisää hieman tilaa listan kohtien väliin */
+}
+
+/* Oikeanpuoleinen lista */
+.meneillaanolevat h2 {
+  text-align: left; /* Varmistaa, että otsikko on vasemmalla */
+  margin-top: -45px; /* Lisää tilaa otsikon ja listan väliin */
+  margin-right: -280px;
+  text-decoration: underline;
+}
+
+.meneillaanolevat {
+  display: flex;
+  justify-content: flex-end; /* Kohdistaa sisällön oikealle */
+  text-align: left; /* Varmistaa, että pistemerkki on vasemmalla */
+  padding: 0; /* Poistaa ylimääräiset sisennykset */
+  text-decoration: underline;
+  margin-top: -220px; /* Siirtää lista hieman ylös */
+}
+
+.meneillaanolevat ul {
+  list-style-position: outside; /* Pistemerkki vasemmalle */
+  padding-right: 0; /* Poistaa oikean puoleisen sisennyksen */
+  margin: 0;
+}
+
+.meneillaanolevat li {
+  margin-bottom: 10px; /* Lisää hieman tilaa listan kohtien väliin */
+}
