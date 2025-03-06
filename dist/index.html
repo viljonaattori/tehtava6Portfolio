@@ -269,13 +269,13 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/tehtava0.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/htmllogo.png" alt="html-logo" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Harjoituksessa luotiin staattiset html sivut, jotka käsittelevät kunkin opiskelijan meneillään olevia kursseja, sekä tieto opiskelijasta. </p>
                                     <p class="mb-4">Toteutin 4 eri html sivua jossa jokaisella sivulla on oma asiansa. Lisäksi Footer ja navigointi ovat jokaisella sivulla. Taitaapa siellä olla yhteydenottolomakekkin ilman toiminnallisuutta.</p>
                                     <p class="mb-4">Tehtävän isoin anti oli ehkä tuo sivuilla navigoiminen ja tuollaisen yksinkertaisen kokonaisuuden hahmottaminen. Mielestäni onnistuin hyvin tehtävässä. Jos jotain pitäisi tehdä toisin niin käyttäisin varmaan valmiita komponentteja, koska raaka html on vähän tylyn näköistä. </p>
                                     <p class="mb-4">Alla olevasta linkistä pääsee tarkastelemaan koodia GitHubiin ja "Tehtävään" painikkeella pääsee tarkastelemaan miltä toteutus näyttää.</p>
-                                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/viljonaattori/tehtava1" target="_blank">
+                                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/viljonaattori/WEB1" target="_blank">
                                         <i class="fab fa-fw fa-github text-dark"></i>
                                     </a> 
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -294,40 +294,71 @@
             </div>
         </div>
         <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tehtävä 1</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Tehtävä 1 infot</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                    <button  class="btn btn-primary">
-                                        Lue lisää <i class="fas fa-arrow-right"></i>
-                                    </button>
-                                </div>
+        <!-- Portfolio Modal 2-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tehtävä 1</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
                             </div>
+                            <!-- Bootstrap Carousel -->
+                            <div id="carouselTehtava1" class="carousel slide mb-5" >
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/img/portfolio/JSlogo.png" class="d-block w-100 rounded" alt="Console Screenshot 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/portfolio/tehtava1kuva1.png" class="d-block w-100 rounded" alt="Console Screenshot 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/portfolio/tehtava1kuva2.png" class="d-block w-100 rounded" alt="Console Screenshot 3">
+                                    </div>
+                                </div>
+                                <!-- Carousel Controls -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTehtava1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselTehtava1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-4">Tehtävässä toteutettiin javascriptillä consoli sovellus, jossa kysytään käyttäjältä sanaa ja ohjelma kääntää sanan väärinpäin tarkastaen samalla, onko kyseessä palindromi. Lopuksi palauttaa truen tai falsen.  </p>
+                            <p class="mb-4">Tehtävässä ei saanut käyttää valmiita js funktioita toteutukseen. Tein funktion, joka saa parametrina string muuttujan eli käyttäjän sanan. Funktion sisällä on boolean muuttuja ja ensiksi käydään sana läpi etuperin  for silmukassa ja sen jälkeen for-silmukassa takaperin ja verrataan niitä keskenään.  </p>
+                            <p class="mb-4">Suhteellisen yksinkertainen tehtävä, hyvä oli muistella silmukoita.</p>
+                            <p class="mb-4">Tässä laitoin kuvat pyörimään carouselliin ja koodiin pääsee alla olevasta GitHub linkistä.</p>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/viljonaattori/tehtava1" target="_blank">
+                                <i class="fab fa-fw fa-github text-dark"></i>
+                            </a> 
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Sulje
+                            </button>
+                            <a href="tehtava1/index.html" class="btn btn-primary">
+                                Lue lisää <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
         <!-- Portfolio Modal 3-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
