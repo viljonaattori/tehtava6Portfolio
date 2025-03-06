@@ -8138,7 +8138,8 @@ textarea.form-control-lg {
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(75, 0, 130, 1) ,rgba(0, 0, 0, 1)) !important;
 }
 
 .bg-success {
@@ -10985,7 +10986,11 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 200px; /* Voit säätää haluamaasi kokoon */
+  height: 200px; /* Voit säätää haluamaasi kokoon */
+  border-radius: 50%; /* Pyöreä muoto */
+  border: 5px solid white; /* Valkoinen reunus */
+  object-fit: cover; /* Kuvan täyttö säilyttäen kuvasuhteen */
 }
 
 @media (min-width: 992px) {
