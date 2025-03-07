@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": 10,
+      "nimi": "jaba krook",
+      "puhelin": "044284554311"
+    },
+    {
+      "nimi": "Ankka Aku",
+      "puhelin": "0465548795",
+      "id": 11
+    },
+    {
+      "nimi": "Hessu Hopo",
+      "puhelin": "044-432343312",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "nimi": "petteri orpolainen",
+      "puhelin": "0502769506"
+    }
+  ]
+}
