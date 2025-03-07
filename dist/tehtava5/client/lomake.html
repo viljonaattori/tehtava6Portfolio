@@ -13,7 +13,7 @@
   </head>
   <body class="bg-dark text-white">
     <div class="p-4 mx-auto" style="max-width: 800px">
-      <form action="http://localhost:3000/items" id="puhelintieto_lomake">
+      <form action="http://localhost:3000/items"  id="puhelintieto_lomake">
         <div class="mb-3 mt-3">
           <label for="id" class="form-label">
             ID:
@@ -59,11 +59,15 @@
           id="UpdateBtn"
         />
         <table class="table table-striped table-dark"></table>
-
-        <button class="btn btn-primary"   href="javascript:void(0);"
-        onclick="window.location.href='/dist/index.html'"
-        >Takaisin portfolioon <i class="fas fa-arrow-right"></i>
-      </button>
+          <!-- Linkki lomake.html-sivulle -->
+     
+        <button class="btn btn-primary" onclick="window.location.href='/dist/index.html'">
+          Takaisin portfolioon
+        </button>
+        <button class="btn btn-primary" onclick="window.location.href='index.html'">
+          Takaisin etusivulle
+        </button>
+        
       
       </form>
 
