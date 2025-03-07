@@ -11014,6 +11014,13 @@ html {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+.portfolio .portfolio-item img {
+  width: 100%; /* Skaalaa kuvan leveyden täyttämään parent-elementin */
+  height: 15rem; /* Aseta haluttu korkeus */
+  object-fit: cover; /* Rajaa kuva sopimaan laatikkoon ilman venytystä */
+  border-radius: 0.5rem; /* Pyöristää reunoja, jos haluat */
+}
+
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
