@@ -5,7 +5,12 @@
       displayUser(data);
     });
 })();
+
+
+
 const userDisplay = document.querySelector(".table");
+
+
 displayUser = (data) => {
   userDisplay.innerHTML = `
     <thead>
@@ -180,11 +185,12 @@ async function handleFormSubmit(event) {
 
   const form = event.currentTarget;
   const url = form.action;
-
+  const formData = new FormData(form);
   try {
-    const formData = new FormData(form);
+    
 
     const responseData = await postFormDataAsJson({ url, formData });
+    console.log("Uusi alkio lisätty:", responseData);
     await loadPage(); //päivitetään sivu
   } catch (error) {
     console.error(error);
@@ -192,6 +198,9 @@ async function handleFormSubmit(event) {
 }
 
 const exampleForm = document.getElementById("puhelintieto_lomake"); // Hakee lomakkeen elementit erittelyä varten
+
+
+
 
 exampleForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Estetään oletustoiminto
@@ -204,3 +213,4 @@ exampleForm.addEventListener("submit", function (event) {
     handleFormSubmit(event); // Kutsutaan lisäysfunktiota
   }
 });
+
